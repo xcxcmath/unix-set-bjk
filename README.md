@@ -129,6 +129,9 @@ On [airline-themes wiki](https://github.com/vim-airline/vim-airline/wiki/Screens
 
 - `tmux source-file .tmux.conf` to apply config file
 
+- It doesn't support *256color* on default configurations.
+    - Add `export TERM=xterm-256color` in `~/.zshrc`
+
 ### tmux config
 
 Please check `tmux.tmux.config` file of this repository...
