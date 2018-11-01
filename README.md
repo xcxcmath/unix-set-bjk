@@ -32,6 +32,8 @@ These settings are just one choice of the several possible options.
 
 ### Colorscheme
 
+- Whatever colorscheme you use, Keep it mind: `xterm-256color` counts.
+
 - If there is no default *solarized* colorscheme...
     - Download on [Ethan's website](https://ethanschoonover.com/solarized/)
     - I think it exists on default schemes of Ubuntu terminal
@@ -73,6 +75,18 @@ Installation guides on [github powerline/fonts](https://github.com/powerline/fon
     - `ZSH_THEME="agnoster"` in `~/.zshrc`
     - ...or download themes into `~/.oh-my-zsh/themes/`
     - **Font/Colorscheme settings really matter** depending on your theme!
+
+### Oh My Zsh Plugins
+
+- Change/Add plugin names in `plugins` of `~/.zshrc`
+
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+    - Installation guide for Oh My Zsh is on the repository
+    - Add `ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=23'` in `~/.zshrc` if you use *Solarized Dark* theme
+
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+    - Installation guide is in `INSTALL.md` of the repository
+    - **MAY OPERATE INCORRECTLY** depending on the version of shell
 
 ## Vim
 
