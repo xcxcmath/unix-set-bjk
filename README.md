@@ -124,7 +124,24 @@ On [airline-themes wiki](https://github.com/vim-airline/vim-airline/wiki/Screens
 
 ## tmux
 
-> TODO : Plugins of tmux..
+- **PLEASE EXTRACT DEFAULT CONFIG FILE FIRST**
+    - `tmux show -g | sed 's/^/set-option -g /' > ~/.tmux.default.conf`
+
+- `tmux source-file .tmux.conf` to apply config file
+
+### tmux config
+
+Please check `tmux.tmux.config` file of this repository...
+`tpm` required!
+
+### tpm
+
+- [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+    - Installation guide is in the repository
+    - [List of Plugins](https://github.com/tmux-plugins)
+    - Install : `prefix` + <kbd>I</kbd> (Capital I)
+    - Update : `prefix` + <kbd>U</kbd> (Capital U)
+    - Uninstall?? : keymap doesn't work in **iTerm**, so just delete both from config file and `~/.tmux/plugins/`
 
 ## Git
 
