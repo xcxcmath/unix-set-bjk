@@ -32,7 +32,7 @@ These settings are just one choice of the several possible options.
 
 ### Colorscheme
 
-- Whatever colorscheme you use, Keep it mind: `xterm-256color` counts.
+- Whatever colorscheme you use, Keep it mind: `xterm-256color` matters.
 
 - If there is no default *solarized* colorscheme...
     - Download on [Ethan's website](https://ethanschoonover.com/solarized/)
@@ -75,6 +75,7 @@ Installation guides on [github powerline/fonts](https://github.com/powerline/fon
     - `ZSH_THEME="agnoster"` in `~/.zshrc`
     - ...or download themes into `~/.oh-my-zsh/themes/`
     - **Font/Colorscheme settings really matter** depending on your theme!
+    - For better supports in `tmux`, add `export TERM=xterm-256color` in `~/.zshrc`
 
 ### Oh My Zsh Plugins
 
