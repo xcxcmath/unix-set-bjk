@@ -38,6 +38,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'rip-rip/clang_complete'
 call vundle#end()
 filetype plugin indent on
 
@@ -50,3 +51,8 @@ set laststatus=2
 syntax enable
 set background=dark
 colorscheme solarized
+
+" clang complete
+" directory path containing libclang.so
+" or path of clang library file
+let g:clang_library_path='<path>'
