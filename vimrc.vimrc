@@ -25,6 +25,7 @@ set showmatch
 set wrap " auto LF
 set wmnu
 
+set termguicolors " for some themes support
 set t_Co=256
 
 " Vundle
@@ -35,6 +36,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim' " REQUIRED
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'terryma/vim-multiple-cursors'
@@ -44,13 +46,19 @@ filetype plugin indent on
 
 " vim airline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='luna'
+let g:airline_theme='hybrid' " or 'luna' for solarized
 set laststatus=2
 
 " colorscheme
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme hybrid_material
+" use 'colorscheme solarized' if you want
+
+" hybrid_material config
+let g:enable_bold_font = 1
+let g:enable_italic_font = 1
+let g:hybrid_transparent_background = 1
 
 " clang complete
 " directory path containing libclang.so

@@ -34,13 +34,15 @@ These settings are just one choice of the several possible options.
 
 - Whatever colorscheme you use, Keep it mind: `xterm-256color` matters.
 
+- [iterm2-material-design](https://github.com/MartinSeeler/iterm2-material-design)
+
 - If there is no default *solarized* colorscheme...
     - Download on [Ethan's website](https://ethanschoonover.com/solarized/)
     - I think it exists on default schemes of Ubuntu terminal
 
-- *Solarized dark* recommended
+- *Solarized dark* for Ubuntu, *Material Design Colors* for macOS are recommended
 
-- supports **PuTTY**
+- Solarized supports **PuTTY**
 
 Don't try if the terminal poorly supports it. (e.g. macOS default terminal)
 
@@ -118,7 +120,7 @@ Is there any way to show the contents from a distinct file on markdown?
 
 #### Vim airline themes
 
-I use *luna* theme. However, it may appear poorly.
+I use *luna* and *hybrid* themes. However, it may appear poorly.
 
 On [airline-themes wiki](https://github.com/vim-airline/vim-airline/wiki/Screenshots), you can see a bunch of themes to replace.
 
@@ -155,6 +157,6 @@ This means I do not use any plugins of git in CLI.
 
 - `git config --global`
     - `user.name BJKIm`
-    - `user.name *privacy*@icloud.com`
+    - `user.email *privacy*@icloud.com`
     - `core.editor vim`
     - `core.autocrlf` &rarr; `true` if Windows, `false` otherwise..
