@@ -36,22 +36,24 @@ These settings are just one choice of the several possible options.
 
 - [iterm2-material-design](https://github.com/MartinSeeler/iterm2-material-design)
 
+- If there is no default *One Dark* colorscheme...
+    - Search and download
+
 - If there is no default *solarized* colorscheme...
-    - Download on [Ethan's website](https://ethanschoonover.com/solarized/)
+    - Download from [Ethan's website](https://ethanschoonover.com/solarized/)
     - I think it exists on default schemes of Ubuntu terminal
 
-- *Solarized dark* for Ubuntu, *Material Design Colors* for macOS are recommended
+- *One Dark* theme recommended
 
-- Solarized supports **PuTTY**
-
-Don't try if the terminal poorly supports it. (e.g. macOS default terminal)
+Don't try to apply if the terminal poorly supports it. (e.g. macOS default terminal)
 
 ### powerline fonts
 
 Font is really important on these settings!
 Installation guides on [github powerline/fonts](https://github.com/powerline/fonts)
 
-*UbuntuMono* or *D2Coding* recommended, as you consider the single font of them.
+**Jetbrains Mono** recommended.
+*UbuntuMono* or *D2Coding* are optional.
 
 ## Shell
 
@@ -84,45 +86,32 @@ Installation guides on [github powerline/fonts](https://github.com/powerline/fon
 - Change/Add plugin names in `plugins` of `~/.zshrc`
 
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-    - Installation guide for Oh My Zsh is on the repository
+    - Installation guide for Oh My Zsh on the repository
     - Add `ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=23'` in `~/.zshrc` if you use *Solarized Dark* theme
 
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-    - Installation guide is in `INSTALL.md` of the repository
+    - Installation guide in `INSTALL.md` of the repository
     - **MAY OPERATE INCORRECTLY** depending on the version of shell
 
-## Vim
+- [autoupdate](https://github.com/TamCore/autoupdate-oh-my-zsh-plugins)
+    - Installation guide on the repository
+
+## NeoVim
 
 I can't use Emacs.
 
-### Vundle
+- macOS : `brew install neovim`
+- Ubuntu : `sudo apt install neovim`
 
-- Installation
-    - `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+### Vim-plug
 
-- Usage
-    - `:PluginList` : lists configured plugins
-    - `:PluginInstall` : installs plugins
-    - `:PluginUpdate` : updates them
-    - `:PluginClean` : confirms removal of unused plugins
+Super fast plugin manager
 
-About more informations, see `README.md` on [VundleVim github](https://github.com/VundleVim/Vundle.vim).
+- [Installation and Usage](https://github.com/junegunn/vim-plug)
 
-### Vim plugins
+### Plugins and Configurations
 
-- The list of favorite plugins is already in `vimrc.vimrc`
-- The list of *major* plugins is in [Vim Awesome](https://vimawesome.com)
-
-### Vim config
-
-Please check `vimrc.vimrc` file of this repository...
-Is there any way to show the contents from a distinct file on markdown?
-
-#### Vim airline themes
-
-I use *luna* and *hybrid* themes. However, it may appear poorly.
-
-On [airline-themes wiki](https://github.com/vim-airline/vim-airline/wiki/Screenshots), you can see a bunch of themes to replace.
+Posted at `nvimrc.vimrc`
 
 ## tmux
 
@@ -160,3 +149,39 @@ This means I do not use any plugins of git in CLI.
     - `user.email *privacy*@icloud.com`
     - `core.editor vim`
     - `core.autocrlf` &rarr; `true` if Windows, `false` otherwise..
+
+---
+
+**NOTE: These configurations are deprecated.**
+
+## *Legacy Vim*
+
+### Vundle
+
+- Installation
+    - `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+
+- Usage
+    - `:PluginList` : lists configured plugins
+    - `:PluginInstall` : installs plugins
+    - `:PluginUpdate` : updates them
+    - `:PluginClean` : confirms removal of unused plugins
+
+About more informations, see `README.md` on [VundleVim github](https://github.com/VundleVim/Vundle.vim).
+
+### Vim plugins
+
+- The list of favorite plugins is already in `vimrc.vimrc`
+- The list of *major* plugins is in [Vim Awesome](https://vimawesome.com)
+
+### Vim config
+
+Please check `vimrc.vimrc` file of this repository...
+Is there any way to show the contents from a distinct file on markdown?
+
+#### Vim airline themes
+
+I use *luna* and *hybrid* themes. However, it may appear poorly.
+
+On [airline-themes wiki](https://github.com/vim-airline/vim-airline/wiki/Screenshots), you can see a bunch of themes to replace.
+
